@@ -1,6 +1,6 @@
 - 👋 Hi, I’m @sulbhagirwalkar
 - 👀 I’m interested in Java 
-- 🌱 I’m currently learning J2EE,Servlets,JSP,Spring
+- 🌱 I’m currently working on Java ,J2EE,Spring Boot
 - 💞️ I’m looking to collaborate on Java Backend developer
 - 📫 How to reach me ...
 
