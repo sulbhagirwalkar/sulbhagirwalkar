@@ -1,31 +1,44 @@
 //Demonstrate ArrayList
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.List;
+
+
+class Employee{
+    int id;
+    String lastName;
+
+    public void setId(int id) {
+        this.id = id;
+    }
+
+    @Override
+    public String toString() {
+        return "Employee{" +
+                "id=" + id +
+                ", lastName='" + lastName + '\'' +
+                '}';
+    }
+
+    public Employee(int id, String lastName) {
+        this.id = id;
+        this.lastName = lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+}
 
 class ArrayListDemo {
     public static void main(String[] args) {
-        List<Integer> efficiency = new ArrayList<>();
-        efficiency.add(4);
-        efficiency.add(4);
-        efficiency.add(6);
-        efficiency.add(7);
+        List<Employee> efficiency = new ArrayList<>();
+        efficiency.add(new Employee(1, "sulbha"));
+        efficiency.add(new Employee(2, "Adam"));
+        efficiency.add(new Employee(3, "Emily"));
         System.out.println(efficiency);
-        List<Integer> cost = new ArrayList<>();
-        cost.add(1);
-        cost.add(1);
-        cost.add(2);
-        cost.add(2);
-        System.out.println(cost);
-        int n = efficiency.size();
-        int m = cost.size();
-        List<Integer> minimumCost = new ArrayList<>();
+    }
 
-        for (Integer integer : efficiency) {
-
-            cost.stream().map(item -> integer + item).forEach(minimumCost::add);
-        }
-        System.out.println(minimumCost);
-        }
 }
 
